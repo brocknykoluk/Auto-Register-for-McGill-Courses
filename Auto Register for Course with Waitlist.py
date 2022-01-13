@@ -10,10 +10,12 @@ while x==1:
     driver.get("https://horizon.mcgill.ca/pban1/twbkwbis.P_WWWLogin")
     time.sleep(4)
     username = driver.find_element_by_id("UserID")
-    username.send_keys("260962306")
+    ## this is a fake, placeholder username. input your own for the code to fucntion
+    username.send_keys("XXXXXX")
     time.sleep(0.5)
     password = driver.find_element_by_id("PIN")
-    password.send_keys("m2kjv3ppmd13")
+    ## this is a fake, placeholder password. input your own for the code to fucntion
+    password.send_keys("XXXXXX")
     time.sleep(0.4)
     password.send_keys(Keys.RETURN)
     time.sleep(0.3)
@@ -33,7 +35,7 @@ while x==1:
         except:pass
     time.sleep(3)
 
-##selects subject
+##selects subject. change value to different course code for a different course (Ex. from "POLI" to "HIST")
     while True:
         try:
             [a.click() for a in driver.find_elements_by_tag_name("option") if a.get_attribute("value") == "POLI"]
@@ -71,7 +73,7 @@ while x==1:
         butonnn.click()
         time.sleep(3)        
         
-##Selects specific course
+##Selects specific course. change depending on which course you want
     driver.find_element_by_xpath("/html/body/div[3]/table[2]/tbody/tr[10]/td[3]/form/input[30]").click()
     time.sleep(3)
     num = 0
