@@ -10,11 +10,11 @@ while x==1:
     driver.get("https://horizon.mcgill.ca/pban1/twbkwbis.P_WWWLogin")
     time.sleep(4)
     username = driver.find_element_by_id("UserID")
-    ## this is a fake, placeholder username. input your own for the code to fucntion
+    ## this is a fake, placeholder username. input your own for the code to function
     username.send_keys("XXXXXX")
     time.sleep(0.5)
     password = driver.find_element_by_id("PIN")
-    ## this is a fake, placeholder password. input your own for the code to fucntion
+    ## this is a fake, placeholder password. input your own for the code to function
     password.send_keys("XXXXXX")
     time.sleep(0.4)
     password.send_keys(Keys.RETURN)
