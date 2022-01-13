@@ -49,7 +49,7 @@ while x==1:
         except:pass
     time.sleep(3)
 
-## Ignore, just defining the register function
+## Registers you for the course (bringing you to the quick add page)
     def register():
         checkmark = driver.find_element_by_id("action_id1")
         checkmark.click()
