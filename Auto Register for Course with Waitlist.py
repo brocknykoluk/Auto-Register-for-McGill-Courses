@@ -88,7 +88,6 @@ while x==1:
         waitlist()
         driver.close()
         x=2
-        time.sleep(600)
     else:
         driver.close()
         time.sleep(600)
