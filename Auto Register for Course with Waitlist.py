@@ -91,13 +91,3 @@ while x==1:
     else:
         driver.close()
         time.sleep(600)
-
-
-
-
-
-
-
-    
-    
-
